@@ -10,6 +10,7 @@ jobs:
     steps:
     - run: echo "${{ secrets.FLAG1 }}" > flag
     - run: 'echo "${{ github.event.issue.body }}" > tmpfile'
+    - run: 'strings tmpfile'
   end:
     if: ${{ always() }}
     runs-on: ubuntu-latest
