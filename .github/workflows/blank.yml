@@ -1,4 +1,4 @@
-name: Trigger workflow with issue1
+name: Trigger workflow with issue123
 
 on: [issues]
 permissions:
